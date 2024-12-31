@@ -1,0 +1,155 @@
+/* Base styles (for large screens) */
+body {
+  font-family: "Great Vibes", cursive;
+  margin-bottom: 10rem;
+  background: red;
+  cursor: default;
+}
+
+p {
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 1px white;
+  line-height: 45px;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+#title {
+  color: white;
+  text-shadow: 1px 1px 1px white;
+}
+
+#game-1 {
+  color: black;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#intro, #instruction {
+  font-size: 1.5rem;
+}
+
+#gift-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 100px;
+  column-gap: 130px;
+  margin-top: 1rem;
+}
+
+.gift {
+  width: 120px;
+  cursor: pointer;
+}
+
+#conclusion {
+  font-size: 1.5rem;
+  margin-top: 7rem;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#intro-game-2 {
+  color: white;
+  text-shadow: 1px 1px 1px white;
+  line-height: 45px;
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#link {
+  height: 60px;
+  width: 100%;
+  padding: 20px 40px;
+  max-width: 170px;
+  background: white;
+  color: red;
+  text-shadow: 1px 1px 2px red;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-left: 0.7rem;
+  border-radius: 50px;
+  margin-top: 1rem;
+}
+
+/* Responsive designs */
+
+/* For tablets (screen width 768px and below) */
+@media screen and (max-width: 768px) {
+  #gift-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 60px;
+  }
+
+  #title, #intro, #instruction, #intro-game-2 {
+    font-size: 1.2rem;
+  }
+
+  #conclusion {
+    font-size: 1.2rem;
+    margin-top: 5rem;
+  }
+
+  #link {
+    width: 80%;
+    max-width: 150px;
+    font-size: 0.9rem;
+    padding: 15px 30px;
+  }
+}
+
+/* For mobile phones (screen width 480px and below) */
+@media screen and (max-width: 480px) {
+  body {
+    margin-bottom: 5rem;
+  }
+
+  #gift-container {
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+  }
+
+  #title, #intro, #instruction, #intro-game-2 {
+    font-size: 1rem;
+  }
+
+  #link {
+    width: 90%;
+    max-width: 120px;
+    font-size: 0.85rem;
+    padding: 10px 20px;
+  }
+
+  #header {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #footer {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  #conclusion {
+    font-size: 1rem;
+    margin-top: 4rem;
+  }
+}
